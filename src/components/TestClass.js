@@ -6,7 +6,9 @@ class TestClass extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {};
+        this.state = {
+            count: 0
+        };
 
         
     }
@@ -16,7 +18,9 @@ class TestClass extends Component {
       }
 
     componentDidUpdate(preProps, preState, snap) {
-     
+     if(preState.count < 3) {
+        this.setState(ps => ({count: ps.count + 1}))
+     }
     }
    
 
@@ -27,7 +31,7 @@ class TestClass extends Component {
     render() {
         return (
             <React.Fragment>
-            <div className="test">Test class</div>
+            <div className="test">count:  {this.state.count}</div>
             </React.Fragment>
         )
     }
