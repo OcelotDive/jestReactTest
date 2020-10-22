@@ -1,0 +1,14 @@
+.display {
+    position: absolute;
+    width: 90%;
+    height: 60px;
+    border: solid 1px #000;
+    margin: 5% 5% 0 5%;
+    background-color: rgb(130, 172, 91);
+    box-shadow: 3px 3px 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    font-size: 24pt;
+    font-weight: 700;
+}

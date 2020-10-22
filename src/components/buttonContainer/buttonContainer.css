@@ -1,0 +1,12 @@
+.buttonContainer {
+    width: 90%;
+    height: 70%;
+    border: solid 1px rgb(117, 114, 114);
+    position: absolute;
+    bottom: 4%;
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
